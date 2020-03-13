@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/registration.css">
+
+    <title>Sign In Page</title>
+</head>
+<body>
+    <img src="img/wave.svg" alt="Waves" class="wave">
+    <div class="container">
+        <div class="img">
+            <img src="img/undraw_arrived_f58d.png" alt="Sign Up">
+        </div>
+        <div class="login-container">
+            <h2>Sign Up</h2>
+            <form action="/user_management_system/RegistrationPageServlet" method="post">
+                <div class="input-div">
+                    <i><ion-icon name="person"></ion-icon></i>
+                    <input type="text" name="username" placeholder="Username" class="input">
+                </div>
+                <div class="input-div">
+                    <i><ion-icon name="person"></ion-icon></i>
+                    <input type="text" name="first_name" placeholder="First Name" class="input">
+                </div>
+                <div class="input-div">
+                    <i><ion-icon name="person"></ion-icon></i>
+                    <input type="text" name="last_name" placeholder="Last Name" class="input">
+                </div>
+                <div class="input-div">
+                    <i><ion-icon name="send-sharp"></ion-icon></i>
+                    <input type="text" name="email" placeholder="Email" class="input">
+                </div>
+                <div class="input-div">
+                    <i><ion-icon name="location"></ion-icon></i>
+                    <input type="text" name="address" placeholder="Address" class="input">   
+                </div>
+                <div class="input-div">
+                    <i><ion-icon name="calendar"></ion-icon></i>
+                    <input type="date" name="birth_date" placeholder="Birth Date" class="input">   
+                </div>
+                <div class="input-div">
+                    <i><ion-icon name="call"></ion-icon></i>
+                    <input type="text" name="phone_number" placeholder="Phone Number" class="input">   
+                </div>
+                <div class="input-div">
+                    <i><ion-icon name="lock-closed"></ion-icon></i>
+                    <input type="password" name="password" placeholder="Password" class="input">   
+                </div>
+                <div class="input-div">
+                    <i><ion-icon name="lock-closed"></ion-icon></i>
+                    <input type="password" name="confirm_password" placeholder="Confirm Password" class="input">   
+                </div>
+                <div class="check-div">
+                   <input type="checkbox" id="agreement"><span> I agree with </span> <a href="#">terms of use</a>
+                </div>
+                <input type="submit" value="Sign Up" class="btn" id="sign_up" disabled>
+                <div class="link-div">
+                    <span>Already have an account? </span> <a href="index.html">Sign In!</a>
+                </div>                
+            </form>
+        </div>
+    </div>
+    <script src="js/script2.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</body>
+</html>
